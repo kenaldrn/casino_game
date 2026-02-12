@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎰 Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container neon-border">
+    <h1 class="neon-text">🎲 Casino Dashboard</h1>
+    <div id="playerDisplay"></div>
+    <div id="balance">Balance: $100</div>
+
+    <div class="stats">
+        <p>Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span> | Pushes: <span id="pushes">0</span></p>
+    </div>
+
+    <h3 class="neon-text-small">Games</h3>
+    <button class="neon-btn" onclick="window.location.href='lucky7.html'">🎲 Lucky 7 Dice</button>
+    <button class="neon-btn" onclick="window.location.href='slots.html'">🎰 Slot Machine</button>
+    <button class="neon-btn" onclick="goToMenu()">Back to Menu</button>
+
+    <h3 class="neon-text-small">Leaderboard</h3>
+    <ul id="leaderboard"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
