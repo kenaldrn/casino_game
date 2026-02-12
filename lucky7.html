@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎲 Lucky 7 Dice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="neon-text">🎲 Lucky 7 Dice</h1>
+
+<div id="playerDisplay"></div>
+<div id="balance">Balance: $100</div>
+
+<div class="chip-container neon-border">
+    <h3 class="neon-text-small">Place Your Bet</h3>
+    <div class="chips">
+        <button class="chip neon-btn" data-value="5">$5</button>
+        <button class="chip neon-btn" data-value="10">$10</button>
+        <button class="chip neon-btn" data-value="25">$25</button>
+        <button class="chip neon-btn" data-value="50">$50</button>
+        <button class="chip neon-btn" data-value="100">$100</button>
+    </div>
+</div>
+
+<div class="controls">
+    <button class="neon-btn" onclick="rollLucky7()">Roll Dice</button>
+    <button class="neon-btn" onclick="goToDashboard()">Dashboard</button>
+</div>
+
+<div class="dice-area">
+    <div class="dice-group neon-border">
+        <h3>Player</h3>
+        <div class="dice-container">
+            <div class="dice dice-3d" id="playerDie1"></div>
+            <div class="dice dice-3d" id="playerDie2"></div>
+        </div>
+        <div id="playerTotal"></div>
+    </div>
+
+    <div class="dice-group neon-border">
+        <h3>Dealer</h3>
+        <div class="dice-container">
+            <div class="dice dice-3d" id="dealerDie1"></div>
+            <div class="dice dice-3d" id="dealerDie2"></div>
+        </div>
+        <div id="dealerTotal"></div>
+    </div>
+</div>
+
+<div id="result" class="neon-text-small"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
