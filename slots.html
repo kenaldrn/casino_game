@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎰 Slot Machine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="neon-text">🎰 Slot Machine</h1>
+
+<div id="playerDisplay"></div>
+<div id="balance">Balance: $100</div>
+
+<div class="chip-container neon-border">
+    <h3 class="neon-text-small">Place Your Bet</h3>
+    <div class="chips">
+        <button class="chip neon-btn" data-value="5">$5</button>
+        <button class="chip neon-btn" data-value="10">$10</button>
+        <button class="chip neon-btn" data-value="25">$25</button>
+        <button class="chip neon-btn" data-value="50">$50</button>
+        <button class="chip neon-btn" data-value="100">$100</button>
+    </div>
+</div>
+
+<div class="controls">
+    <button class="neon-btn" onclick="rollSlots()">Spin</button>
+    <button class="neon-btn" onclick="goToDashboard()">Dashboard</button>
+</div>
+
+<div class="slot-area neon-border">
+    <div class="slot-reel" id="reel1">❓</div>
+    <div class="slot-reel" id="reel2">❓</div>
+    <div class="slot-reel" id="reel3">❓</div>
+</div>
+
+<div id="result" class="neon-text-small"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
