@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lucky 7 Casino</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>🎰 Neon Casino</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="menu-page">
 
-    <div class="menu-container">
-        <h1>🎲 Lucky 7 Duel</h1>
+<div class="menu-container neon-border">
+    <h1 class="neon-text">🎰 Welcome to Neon Casino 🎲</h1>
+    <input type="text" id="playerName" placeholder="Enter Your Name">
+    <button class="neon-btn" onclick="startCasino()">Enter Casino</button>
+    <button class="neon-btn" onclick="goToRules()">How To Play</button>
 
-        <button onclick="goToGame()">Play Game</button>
-        <button onclick="goToRules()">How To Play</button>
-    </div>
+    <h3 class="neon-text-small">Leaderboard</h3>
+    <ul id="leaderboard"></ul>
+</div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
